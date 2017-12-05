@@ -1,0 +1,76 @@
+
+html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img{
+	margin:0;
+	padding:0
+}
+body {
+	font-size: 12px;
+	color: #434343;
+	font-family: "宋体";
+	background-color:#ffffff;
+}
+img {
+ 	border: 0
+}
+ul ,ol {
+	list-style: none;
+}
+input,textarea{
+	border:0;
+	outline: none;
+}
+a{
+	text-decoration: none;
+}
+.f_left{
+	float: left;
+}
+
+.f_right{
+	float: right;
+}
+
+.clearfix {
+	zoom:1; 
+}
+ .clearfix:before ,.clearfix:after{	
+	content: "";
+	display: block;
+	width: 0;
+	height: 0;
+	visibility: hidden;
+	clear: both;
+}
+
+/* 公共样式 */
+
+.banxin{
+	width: 970px;
+	margin: 0 auto;
+}
+.ml_5{
+	margin-left: 5px;
+}
+.ml_15{
+	margin-left: 15px;
+}
+.mt_22{
+	margin-top: 22px;
+}
+.ml_20{
+	margin-left: 20px;
+}
+.pl_10{
+	padding-left: 10px;
+}
+
+.col_333{
+	color:#333 !important;
+}
+.col_red{
+	color:red;
+}
+.noneBorder{
+	border:0!important;
+}
+
