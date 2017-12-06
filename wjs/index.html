@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+  <title>Bootstrap</title>
+  <link rel="shortcut icon" type="image/x" href="./favicon.ico">
+  <!-- Bootstrap -->
+  <link href="./lib/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/index.css">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+</head>
+
+<body>
+  <!-- 顶部 start-->
+  <header class="wjs_header hidden-sm hidden-xs">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2">
+          <a href="#" class="myapp_img">
+            <span class="my_icon my_icon_phone"></span>
+            <span>手机微金所</span>
+            <img src="./images/code.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-md-5">
+          <span class="my_icon my_icon_tel"></span>
+          <span>4006-89-4006（服务时间：9:00-21:00）</span>
+        </div>
+        <div class="col-md-2">
+          <a href="#">常见问题</a>
+          <a href="#" class="ml_10">财富热线</a>
+        </div>
+        <div class="col-md-3">
+          <a class="btn btn-danger">免费注册</a>
+          <a class="btn btn-link">登录</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- 顶部 end-->
+
+  <!-- 导航 start -->
+  <nav class="navbar navbar-default wjs-nav" data-spy="affix" data-offset-top="200">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+          aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <span class="my_icon my_icon_logo"></span>
+          <span class="my_icon my_icon_word"></span>
+        </a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a href="#">我要投资
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="active">
+            <a href="#">我要借贷
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="active">
+            <a href="#">平台介绍
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="active">
+            <a href="#">新手介绍
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="active">
+            <a href="#">最新动态
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="active">
+            <a href="#">微投资
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right hidden-sm ">
+          <li class="active">
+            <a href="#">个人中心</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </nav>
+  <!-- 导航 end -->
+  <!-- 轮播 start -->
+  <div class="wjs_banner">
+
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <a href="#" class="pcImg hidden-xs" style="background-image:url('./images/slide_01_2000x410.jpg')"></a>
+          <a href="#" class="mbImg hidden-lg hidden-md hidden-sm">
+            <img src="./images/slide_01_640x340.jpg" alt="">
+          </a>
+        </div>
+
+        <div class="item">
+          <a href="#" class="pcImg hidden-xs" style="background-image:url('./images/slide_02_2000x410.jpg')"></a>
+
+          <a href="#" class="mbImg hidden-lg hidden-md hidden-sm">
+            <img src="./images/slide_02_640x340.jpg" alt="">
+          </a>
+        </div>
+        <div class="item">
+          <a href="#" class="pcImg hidden-xs" style="background-image:url('./images/slide_03_2000x410.jpg')"></a>
+
+          <a href="#" class="mbImg hidden-lg hidden-md hidden-sm">
+            <img src="./images/slide_03_640x340.jpg" alt="">
+          </a>
+        </div>
+        <div class="item">
+          <a href="#" class="pcImg hidden-xs" style="background-image:url('./images/slide_04_2000x410.jpg')"></a>
+
+          <a href="#" class="mbImg hidden-lg hidden-md hidden-sm">
+            <img src="./images/slide_04_640x340.jpg" alt="">
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+  <!-- 轮播 end -->
+  <!-- 信息 start -->
+  <div class="wjs_info  hidden-xs">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-6">
+          <div class="media">
+            <div class="media-left">
+              <a href="#" class="my_icon my_icon_E903"></a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">支付交易保障</h4>
+              <p>银联支付全称保证支付安全</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="media">
+            <div class="media-left">
+              <a href="#" class="my_icon my_icon_E903"></a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">支付交易保障</h4>
+              <p>银联支付全称保证支付安全</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+
+          <div class="media">
+            <div class="media-left">
+              <a href="#" class="my_icon my_icon_E903"></a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">支付交易保障</h4>
+              <p>银联支付全称保证支付安全</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="media">
+            <div class="media-left">
+              <a href="#" class="my_icon my_icon_E903"></a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">支付交易保障</h4>
+              <p>银联支付全称保证支付安全</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+
+          <div class="media">
+            <div class="media-left">
+              <a href="#" class="my_icon my_icon_E903"></a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">支付交易保障</h4>
+              <p>银联支付全称保证支付安全</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="media">
+            <div class="media-left">
+              <a href="#" class="my_icon my_icon_E903"></a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">支付交易保障</h4>
+              <p>银联支付全称保证支付安全</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  <!-- 信息 end -->
+  <!--预约 start -->
+  <div class="wjs_book">
+    <div class="container">
+      <div class="pull-left">
+        <span class="my_icon my_icon_E905"></span>
+        <span> 现在已有 723 人在排队，累计预约交易成功7571次 。什么是预约投标？</span>
+        <a href="#" class="book_link">立即预约</a>
+      </div>
+      <div class="pull-right hidden-xs">
+        <span class="my_icon my_icon_E905"></span>
+        <span>微金所企业宣传片</span>
+      </div>
+    </div>
+
+  </div>
+  <!--预约  end -->
+
+  <!-- 产品 start -->
+  <div class="wjs_product">
+    <div class="container">
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+      <li role="presentation" class="active">
+        <a href="#home" aria-controls="home" role="tab" data-toggle="tab">特别推荐</a>
+      </li>
+      <li role="presentation">
+        <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">微投资</a>
+      </li>
+      <li role="presentation">
+        <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">微投资</a>
+      </li>
+      <li role="presentation">
+        <a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">微投资</a>
+      </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div role="tabpanel" class="tab-pane active" id="home">
+        <div class="row">
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <a href="#" class="product_box exp">
+              <div class="product-left">
+                <span class="my_icon my_icon_tips"></span>
+                <h3>新手体验标1002期</h3>
+                <div class="col-xs-6 text-left">
+                  <p>起投金额(元)</p>
+                  <p>0.01万</p>
+                </div>
+                <div class="col-xs-6 text-right">
+                  <p>起投金额(元)</p>
+                  <p>0.01万</p>
+                </div>
+                <div class="col-xs-6 text-left">
+                  <p>起投金额(元)</p>
+                  <p>0.01万</p>
+                </div>
+                <div class="col-xs-6 text-right">
+                  <p>起投金额(元)</p>
+                  <p>0.01万</p>
+                </div>
+              </div>
+              <div class="product-right">
+                <p>
+                  <b>8</b>
+                  <sub>%</sub>
+                </p>
+                <p>年利率</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <a href="#" class="product_box">
+              <div class="product-left">
+                <h3>新手体验标1002期</h3>
+                <div class="col-xs-6 text-left">
+                  <p>起投金额(元)</p>
+                  <p>0.01万</p>
+                </div>
+                <div class="col-xs-6 text-right">
+                  <p>起投金额(元)</p>
+                  <p>0.01万</p>
+                </div>
+                <div class="col-xs-6 text-left">
+                  <p>起投金额(元)</p>
+                  <p>0.01万</p>
+                </div>
+                <div class="col-xs-6 text-right">
+                  <p>起投金额(元)</p>
+                  <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                          <span class="sr-only">60% Complete</span>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-right">
+                  <div class="title">
+                      <span class="red" data-toggle="tooltip" data-placement="top" title="提示1">宝</span>
+                      <span class="green" data-toggle="tooltip" data-placement="top" title="提示2">广</span>
+                  </div>
+                <p>
+                  <b>8</b>
+                  <sub>%</sub>
+                </p>
+                <p>年利率</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <a href="#" class="product_box">
+              <div class="product-left">
+                <h3>新手体验标1002期</h3>
+                <div class="col-xs-6 text-left">
+                  <p>起投金额(元)</p>
+                  <p>0.01万</p>
+                </div>
+                <div class="col-xs-6 text-right">
+                  <p>起投金额(元)</p>
+                  <p>0.01万</p>
+                </div>
+                <div class="col-xs-6 text-left">
+                  <p>起投金额(元)</p>
+                  <p>0.01万</p>
+                </div>
+                <div class="col-xs-6 text-right">
+                  <p>起投金额(元)</p>
+                  <p>0.01万</p>
+                </div>
+              </div>
+              <div class="product-right">
+                <p>
+                  <b>8</b>
+                  <sub>%</sub>
+                </p>
+                <p>年利率</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <a href="#" class="product_box">
+              <div class="product-left">
+                <h3>新手体验标1002期</h3>
+                <div class="col-xs-6 text-left">
+                  <p>起投金额(元)</p>
+                  <p>0.01万</p>
+                </div>
+                <div class="col-xs-6 text-right">
+                  <p>起投金额(元)</p>
+                  <p>0.01万</p>
+                </div>
+                <div class="col-xs-6 text-left">
+                  <p>起投金额(元)</p>
+                  <p>0.01万</p>
+                </div>
+                <div class="col-xs-6 text-right">
+                  <p>起投金额(元)</p>
+                  <p>0.01万</p>
+                </div>
+              </div>
+              <div class="product-right">
+                <p>
+                  <b>8</b>
+                  <sub>%</sub>
+                </p>
+                <p>年利率</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="profile">123</div>
+      <div role="tabpanel" class="tab-pane" id="messages">456</div>
+      <div role="tabpanel" class="tab-pane" id="settings">789</div>
+    </div>
+  </div>
+</div>
+  <!-- 产品 end -->
+  <!-- 新闻 start -->
+  <div class="wjs_news">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-2 col-md-offset-2">
+                  <h4 class="txt">全部新闻</h4>
+              </div>
+              <div class="col-md-1">
+                  <div class="wjs_line hidden-sm hidden-xs"></div>
+                  <!-- Nav tabs -->
+                  <ul class="nav wjs_new_tabs" role="tablist">
+                      <li role="presentation" class="active">
+                          <a href="#news_tabs01" aria-controls="home" role="tab" data-toggle="tab">
+                              <span class="my_icon my_icon_new01"></span>
+                          </a>
+                      </li>
+                      <li role="presentation">
+                          <a href="#news_tabs02" aria-controls="profile" role="tab" data-toggle="tab">
+                              <span class="my_icon my_icon_new02"></span>
+                          </a>
+                      </li>
+                      <li role="presentation">
+                          <a href="#news_tabs03" aria-controls="messages" role="tab" data-toggle="tab">
+                              <span class="my_icon my_icon_new03"></span>
+                          </a>
+                      </li>
+                      <li role="presentation">
+                          <a href="#news_tabs04" aria-controls="settings" role="tab" data-toggle="tab">
+                              <span class="my_icon my_icon_new04"></span>
+                          </a>
+                      </li>
+                  </ul>
+
+              </div>
+              <div class="col-md-7">
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                      <div role="tabpanel" class="tab-pane active" id="news_tabs01">
+                          <ul>
+                              <li>
+                                  <a href="#">
+                                      <span class="hidden-xs">2016-01-22</span> 【微还款】一周还款公告2016年1月18日-1月24日</a>
+                              </li>
+                              <li>
+                                  <a href="#">
+                                      <span class="hidden-xs">2016-01-22</span> 【微还款】一周还款公告2016年1月18日-1月24日</a>
+                              </li>
+                              <li>
+                                  <a href="#">
+                                      <span class="hidden-xs">2016-01-22</span> 【微还款】一周还款公告2016年1月18日-1月24日</a>
+                              </li>
+                              <li>
+                                  <a href="#">
+                                      <span class="hidden-xs">2016-01-22</span> 【微还款】一周还款公告2016年1月18日-1月24日</a>
+                              </li>
+                              <li>
+                                  <a href="#">
+                                      <span class="hidden-xs">2016-01-22</span> 【微还款】一周还款公告2016年1月18日-1月24日</a>
+                              </li>
+                              <li>
+                                  <a href="#">
+                                      <span class="hidden-xs">2016-01-22</span> 【微还款】一周还款公告2016年1月18日-1月24日</a>
+                              </li>
+                              <li>
+                                  <a href="#">
+                                      <span class="hidden-xs">2016-01-22</span> 【微还款】一周还款公告2016年1月18日-1月24日</a>
+                              </li>
+                              <li>
+                                  <a href="#">
+                                      <span class="hidden-xs">2016-01-22</span> 【微还款】一周还款公告2016年1月18日-1月24日</a>
+                              </li>
+                          </ul>
+                      </div>
+                      <div role="tabpanel" class="tab-pane" id="news_tabs02">2222</div>
+                      <div role="tabpanel" class="tab-pane" id="news_tabs03">3333</div>
+                      <div role="tabpanel" class="tab-pane" id="news_tabs04">4444</div>
+                  </div>
+              </div>
+
+
+          </div>
+      </div>
+  </div>
+  <!-- 新闻 end -->
+<!-- 合作伙伴 -->
+<div class="wjs_pantner hidden-sm hidden-xs">
+    <div class="container">
+        <h4>合作伙伴</h4>
+        <ul>
+            <li>
+                <a href="#" class="my_icon my_icon_partner01"></a>
+            </li>
+            <li>
+                <a href="#" class="my_icon my_icon_partner02"></a>
+            </li>
+            <li>
+                <a href="#" class="my_icon my_icon_partner03"></a>
+            </li>
+            <li>
+                <a href="#" class="my_icon my_icon_partner04"></a>
+            </li>
+            <li>
+                <a href="#" class="my_icon my_icon_partner05"></a>
+            </li>
+            <li>
+                <a href="#" class="my_icon my_icon_partner06"></a>
+            </li>
+            <li>
+                <a href="#" class="my_icon my_icon_partner07"></a>
+            </li>
+            <li>
+                <a href="#" class="my_icon my_icon_partner08"></a>
+            </li>
+            <li>
+                <a href="#" class="my_icon my_icon_partner09"></a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="./lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  <!-- <script src="./js/index.js"></script> -->
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+      $('.carousel').carousel({
+        interval: 1000
+      })
+    })
+  </script>
+</body>
+
+</html>
