@@ -7,7 +7,7 @@ $(function () {
      length = oLi.length,
      indexOdd = 0,
      indexNew,
-     DURATION = 2000,
+     DURATION = 3000,
      ANIMATION=600,
      timer = null;
      oLi.eq(0).addClass('active');
