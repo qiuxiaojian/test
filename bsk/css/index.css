@@ -1,0 +1,253 @@
+body {
+    font-family: "Microsoft Yahei", SansSerif;
+    font-size: 14px;
+    color: #666;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+a:hover {
+    color: #666666;
+    text-decoration: none;
+}
+
+button {
+    outline: none;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+ul, ol{
+    list-style: none;
+}
+
+/*顶部导航*/
+.bsk_header{
+    height: 45px;
+    position: relative;
+    width: 100%;
+}
+.bsk-nav{
+    height: 45px;
+    display: flex;
+    width: 1000px;
+    margin: 0 auto;
+}
+.bsk-nav a{
+    display: block;
+    width: 108px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    font-size: 14px;
+    color:#3c3c3c;
+}
+.bsk-nav ul{
+    display: flex;
+    width: 720px;
+}
+.bsk-nav ul li{
+    width: 108px;
+    height: 45px;
+    border-left: 1px solid #ccc;
+}
+.bsk-nav ul li:last-child{
+    border-right: 1px solid #ccc;
+}
+.bsk-nav ul li:hover{
+    background:#bb2224;
+}
+.bsk-nav ul>li:first-child:hover  .meiwei{
+    display: block;
+    background:#bb2224;
+}
+.bsk-nav ul li .meiwei{
+    width: 100%;
+    height: 40px;
+    background: url(../images/tm_80.png);
+    position: absolute;
+    top: 45px;
+    left: 0;
+    z-index: 1000;
+    background:#bb2224;
+    opacity: .8;
+    display: none;
+}
+.bsk-nav ul li .meiwei ul{
+    margin-left: 500px;
+}
+.bsk-nav ul li .meiwei li{
+    height: 40px;
+}
+.bsk-nav ul li .meiwei li a{
+    color: white;
+}
+/*//轮播*/
+.bsk-banner{
+    width: 100%;
+    height: 500px;
+    /*position: relative;*/
+    position: absolute;
+    background:url("../images/banner-ind02.jpg");
+    background-size: 100%;
+}
+.bsk-banner ul{
+
+}
+.bsk-banner ul >li{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+.bsk-banner >ol {
+    display: flex;
+    position: absolute;
+    left: 700px;
+    top: 450px;
+}
+.bsk-banner ol  >li{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #6c6c6c;
+    margin-left: 30px;
+}
+
+.bsk-banner.initial{
+    display: inline!important;
+}
+.bsk-banner .initial2{
+    background: black!important;
+}
+.bsk-banner2 {
+    position: absolute;
+    left: 269px;
+    top: 130px;
+    width: 331px;
+    height: 377px;
+    padding: 5px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 5px;
+    color: #fff;
+}
+.bsk-banner2 .p1{
+    margin-bottom: 5px;
+}
+.bsk-banner2 .p1 em{
+    color: yellow;
+}
+.bsk-banner2 .p2{
+   float: right;
+    margin-top: 10px;
+}
+.bsk-banner2 .p2 a{
+    color: white;
+    text-decoration: dashed;
+    border-bottom: 1px solid white;
+    font-size: 12px;
+}
+.bsk-banner2 .p1 a{
+    color: white;
+    text-decoration: blink;
+    margin-left: 10px;
+}
+.bsk-banner2  .txt{
+    width:100%;
+    height: 30px;
+    overflow: hidden;
+    position: relative;
+   border-bottom:2px solid white;
+}
+.bsk-banner2  .txt:hover{
+    background: rgba(0,0,0,.3);
+}
+.bsk-banner2  .txt .txt-box{
+    width: 100%;
+    height: 120px;
+    position: absolute;
+    top: 0px;
+    text-align: center;
+}
+.bsk-banner2  .txt h3{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.bsk-banner2  .txt a{
+    font: 18px/30px "Simsun";
+    color: white;
+}
+
+
+/*开餐信息*/
+.bsk-kcImfo{
+    background: #302722;
+    margin-top: 500px;
+}
+.bsk-kcImfo ul {
+    width: 1250px;
+    margin: 0 auto;
+    display:flex;
+
+}
+.bsk-kcImfo ul li{
+    width: 250px;
+    height: 124px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-left: 1px solid black;
+}
+.bsk-kcImfo ul li:last-child{
+    border-right:1px solid black;
+}
+.bsk-kcImfo ul li:hover{
+background: -webkit-linear-gradient(top ,#aaa28a 2%,  #302722 30%);
+    /*background: green;*/
+}
+.bsk-kcImfo ul li img{
+
+}
+.bsk-kcImfo ul li div{
+    color: white;
+    margin-left: -5px;
+}
+.bsk-kcImfo ul li div h3{
+    font: 15px/22px "Microsoft Yahei";
+}
+
+/*底部内容*/
+.bsk-bot-content{
+    width: 100%;
+    height: 200px;
+    background: #1f1510;
+    color: white;
+}
+.bsk-bot-content ul{
+    display: flex;
+    justify-content: space-between;
+}
+.bsk-bot-content ul li{
+    margin-top: 20px;
+}
+.bsk-bot-content ul li dl dt {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.bsk-bot-content ul li dl dd{
+    height: 24px;
+    line-height: 24px;
+    margin-top: 10px;
+}
+.bsk-last-box{
+    height: 32px;
+    border-top: 1px solid #555;
+    line-height: 32px;
+    text-align: center;
+    background: #302722;
+    border: 1px solid white;
+}
