@@ -1,0 +1,205 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.clearfloat::after{
+    content:'';
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear: both;
+}
+ul{
+    list-style: none;
+}
+.container{
+    width: 1000px;
+    margin: 0 auto;
+   
+}
+.bg-black{
+    color: white;
+    background: black;
+}
+
+
+.head {
+    height: 160px;
+}
+.head-headline{
+   text-align: center;
+}
+.head-headline img{
+    margin-top: 45px;
+}
+.content{
+    background:#ef8fbd;
+}
+.content-title{
+
+    padding-top: 30px;
+    color: white;
+    text-align: center;
+}
+.content-title h2{
+    font-weight: 600;
+    font-size: 35px;
+}
+.content-title span{
+    font-weight: lighter;
+    font-size: 15px;
+    letter-spacing:5px;
+    display: block;
+    padding-top: 12px;
+    padding-bottom: 23px;
+}
+.content-frame{
+    width: 880px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+.content-theme ul li{
+    float: left;
+    width: 25%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.content-theme ul li::after{
+    content: '';
+    display: block;
+    width: 1px;
+    height: 13px;
+    margin-left: 3px;
+    margin-top: -25px;
+    background: black;
+}
+.content-theme ul li:nth-child(1)::after{
+    background: none;
+}
+.content-box{
+    position: relative;
+}
+.content-banner{
+    width: 880px;
+    height: 535px;
+    border-top: 1px solid black;
+    position: relative;
+    overflow: hidden;
+}
+.content-ul{
+    /* width: 4400px; */
+    /* position: absolute; */
+    /* left: -878px; */
+    /* width: 880px;
+    height: 535px; */
+}
+.yue-banner-item{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    /* display: block; */
+}
+/* .yue-banner-item:nth-child(n).active{
+    display: block;
+} */
+.active{
+    display: block;
+}
+.yue-banner-item:nth-child(1){
+    background: url(../image/yuehui01.jpg)no-repeat;
+}
+.yue-banner-item:nth-child(2){
+    background: url(../image/yuehui02.jpg)no-repeat;
+}
+.yue-banner-item:nth-child(3){
+    background: url(../image/yuehui03.jpg)no-repeat;
+}
+.yue-banner-item:nth-child(4){
+    background: url(../image/yuehui04.jpg)no-repeat;
+}
+
+
+/* .content-banner ul li{
+    float: left; 
+    position: relative;
+} */
+/* .content-banner ul li:nth-child(3) .yue-hot{
+    left:144px;
+    top:439px;
+}
+.content-banner ul li:nth-child(5) .yue-hot{
+    left:783px;
+    top:255px;
+} */
+ .yue-hot{
+    display: block;
+    width: 28px;
+    height: 49px;
+    position: absolute;
+    left: 434px;
+    top: 295px;
+    background: url(../image/yuehui-hot.png);
+    transform-origin: center top;
+    animation: swing 2s  ease-in-out;
+    -webkit-animation: swing 2s 0.4s  ease-in-out;
+    
+}
+@keyframes swing {
+    0% {
+        transform:rotateZ(60deg);
+    }
+    10% {
+        transform:rotateZ(-60deg);
+    }
+    30% {
+        transform:rotateZ(45deg);
+    }
+    60% {
+        transform:rotateZ(-45deg);
+    }
+    100% {
+        transform:rotateZ(0deg);
+    }
+}
+@-webkit-keyframes swing {
+    0% {
+        transform:rotateZ(60deg);
+    }
+    10% {
+        transform:rotateZ(-60deg);
+    }
+    30% {
+        transform:rotateZ(45deg);
+    }   
+    60% {
+        transform:rotateZ(-45deg);
+    }
+    100% {
+        transform:rotateZ(0deg);
+    }
+}
+.content-frame .btn-pre,.content-frame .btn-next{
+    width: 37px;
+    height: 158px;
+    /* background-color:#ae2457; */
+    position: absolute;
+    top: 158px;
+    left: -37px;
+    cursor: pointer;
+    background: #ae2457 url("../image/arrow.png")2px 50px no-repeat;
+}  
+.content-frame .btn-pre:hover,.content-frame .btn-next:hover{
+    opacity: 0.6;
+}
+.content-frame .btn-next{
+    left: 880px;
+    background-position: -43px;
+}
